@@ -15,12 +15,14 @@ local lazy_config = require "configs.lazy"
 
 -- load plugins
 require("lazy").setup({
- --- { import = "plugins" },
+  { import = "plugins" },
 }, lazy_config)
 
 require "configs.options"
 require "configs.autocmds"
-
+require "configs.statusline"
+--dofile("/home/sugan/.config/nvim/lua/cached/stl")
 vim.schedule(function()
   require "configs.mappings"
+  require "configs.lsp"
 end)
