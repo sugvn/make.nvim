@@ -1,6 +1,6 @@
 return {
   defaults = { lazy = true },
-  install = { colorscheme = { "nvchad" } },
+---  install = { colorscheme = { "sorbet" } },
 
   ui = {
     icons = {
@@ -24,7 +24,7 @@ return {
         "netrwPlugin",
         "netrwSettings",
         "netrwFileHandlers",
-        "matchit",
+--        "matchit",
         "tar",
         "tarPlugin",
         "rrhelper",

@@ -18,16 +18,9 @@ require("lazy").setup({
  --- { import = "plugins" },
 }, lazy_config)
 
-
-
-
-
-
-
-
-
-
-
-
 require "configs.options"
-require "configs.lsp"
+require "configs.autocmds"
+
+vim.schedule(function()
+  require "configs.mappings"
+end)
