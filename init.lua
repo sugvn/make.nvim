@@ -13,6 +13,7 @@ vim.opt.rtp:prepend(lazypath)
 
 local lazy_config = require "configs.lazy"
 
+dofile("/home/sugan/.config/nvim/lua/colors/defaults")
 -- load plugins
 require("lazy").setup({
   { import = "plugins" },

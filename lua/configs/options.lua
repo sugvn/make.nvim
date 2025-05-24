@@ -6,7 +6,7 @@ vim.opt.shiftwidth=4
 vim.opt.smarttab=true
 vim.opt.autoindent=true
 vim.opt.smartindent=true
-
+vim.opt.termguicolors=true
 
 --file--
 vim.opt.undofile=true
@@ -24,7 +24,7 @@ vim.opt.clipboard = "unnamedplus"
 --line number--
 vim.opt.relativenumber= true
 vim.opt.number = true
-vim.opt.cursorline=true
+--vim.opt.cursorline=true
 ---vim.api.nvim_set_hl(0, 'CursorLine', { bg = 'NONE', underline = false })
 vim.opt.numberwidth=4
 vim.opt.signcolumn="no"

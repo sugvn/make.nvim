@@ -46,7 +46,7 @@ local function statusline()
     "%M",                      -- Modified flag
     " ", --gitstatus,      -- Git diff from gitsigns
     "%=",                      -- Right align
-    filetype or "",
+    filetype or " ",
     "  ",                    -- Filetype
     "%l:%L|%v:%{len(getline('.'))}",
    -- branch or "",          -- Branch name
