@@ -6,8 +6,8 @@ return {
     build = ":TSUpdate",
     config = function ()
       local configs = require("nvim-treesitter.configs")
-      dofile("/home/sugan/.config/nvim/lua/colors/syntax")
-      dofile("/home/sugan/.config/nvim/lua/colors/treesitter")
+      dofile("/home/sugan/.config/nvim/lua/cached/syntax")
+      dofile("/home/sugan/.config/nvim/lua/cached/treesitter")
       configs.setup({
           ensure_installed = { "c", "lua","css","javascript", "html","dart" },
           sync_install = false,
