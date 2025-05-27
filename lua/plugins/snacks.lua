@@ -1,6 +1,6 @@
 return {
   "folke/snacks.nvim",
-  ---event="User FilePost",
+  event="User FilePost",
   ---@type snacks.Config
   opts = {
     --bigfile = { enabled = true },
@@ -13,7 +13,7 @@ return {
     --  timeout = 3000,
     --},
     picker = { enabled = true,
-        --    layout={ preset="ivy", }
+           layout={ preset="dropdown", }
         },
     --quickfile = { enabled = true },
     --scope = { enabled = true },

@@ -13,7 +13,6 @@ vim.opt.rtp:prepend(lazypath)
 
 local lazy_config = require "configs.lazy"
 
-dofile("/home/sugan/.config/nvim/lua/cached/defaults")
 -- load plugins
 require("lazy").setup({
   { import = "plugins" },
@@ -22,7 +21,7 @@ require("lazy").setup({
 require "configs.options"
 require "configs.autocmds"
 require "configs.statusline"
---dofile("/home/sugan/.config/nvim/lua/cached/stl")
+
 vim.schedule(function()
   require "configs.mappings"
   require "configs.lsp"
