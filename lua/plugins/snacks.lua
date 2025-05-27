@@ -13,7 +13,7 @@ return {
     --  timeout = 3000,
     --},
     picker = { enabled = true,
-           layout={ preset="dropdown", }
+           layout={ preset="select", }
         },
     --quickfile = { enabled = true },
     --scope = { enabled = true },
