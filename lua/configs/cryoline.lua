@@ -1,6 +1,6 @@
 -- plugins/my_statusline/statusline.lua
 local filetype=""
-local gitstatus=""
+local gitstatus="" 
 local currbranch=""
 local branch = ""
 local function get_git_branch()
@@ -46,8 +46,7 @@ local function statusline()
     "%M",                      -- Modified flag
     " ", gitstatus,      -- Git diff from gitsigns
     "%=",                      -- Right align
-    "%y",
-    --filetype or " ",
+    filetype or "",
     "  ",                    -- Filetype
     "%l:%L|%v:%{len(getline('.'))}",
     branch or "",          -- Branch name
@@ -55,6 +54,6 @@ local function statusline()
   })
 end
 
-vim.o.statusline = statusline()--"%!v:lua.Statusline()"
+vim.o.statusline = "%!v:lua.Statusline()"
 
---_G.Statusline = statusline
+_G.Statusline = statusline

@@ -15,8 +15,13 @@ return {
       runtime = {
         version = 'LuaJIT',
       },
-
-               diagnostics = { disable = { 'missing-fields' } },
+    workspace = {
+        library = {
+          [vim.fn.expand('$VIMRUNTIME/lua')] = true,
+          [vim.fn.expand('$VIMRUNTIME/lua/vim/lsp')] = true,
+        }
+      },
+    diagnostics = { disable = { 'missing-fields' } },
     }
   }
 

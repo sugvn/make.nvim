@@ -1,3 +1,6 @@
+
+vim.g.snacks_animate = false
+
 --indent--
 vim.opt.expandtab=true
 vim.opt.tabstop=4
@@ -27,7 +30,7 @@ vim.opt.number = true
 vim.opt.cursorline=true
 ---vim.api.nvim_set_hl(0, 'CursorLine', { bg = 'NONE', underline = false })
 vim.opt.numberwidth=4
-vim.opt.signcolumn="no"
+vim.opt.signcolumn="yes"
 
 --cmd line--
 vim.opt.cmdheight = 1

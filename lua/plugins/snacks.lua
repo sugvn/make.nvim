@@ -7,13 +7,13 @@ return {
     --dashboard = { enabled = true },
     --explorer = { enabled = true },
     --indent = { enabled = true },
-    --input = { enabled = true },
+--    input = { enabled = true },
     --notifier = {
     --  enabled = true,
     --  timeout = 3000,
     --},
     picker = { enabled = true,
-           layout={ preset="select", }
+           layout={ preset="vscode", }
         },
     --quickfile = { enabled = true },
     --scope = { enabled = true },
@@ -29,6 +29,7 @@ return {
   keys = {
     -- Top Pickers & Explorer
     { "<A-p>", function() Snacks.picker.smart({cwd="~/"}) end, desc = "Smart Find Files" },
+    { "<leader><leader>", function() Snacks.picker.files({layout={preset="select"}}) end, desc = "Find Config File" },
     { "<leader>,", function() Snacks.picker.buffers() end, desc = "Buffers" },
     { "<leader>/", function() Snacks.picker.grep() end, desc = "Grep" },
     { "<leader>:", function() Snacks.picker.command_history() end, desc = "Command History" },

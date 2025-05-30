@@ -19,9 +19,10 @@ require("lazy").setup({
 
 require "configs.options"
 require "configs.autocmds"
-require "configs.statusline"
+require "configs.cryoline"
 
 vim.schedule(function()
   require "configs.mappings"
   require "configs.lsp"
+  require "configs.direct"
 end)
