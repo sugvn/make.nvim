@@ -8,6 +8,7 @@ end
 vim.lsp.enable(lsp_configs)
 
 
+vim.api.nvim_set_hl(0, "BlinkCmpMenuSelection", { bg ="#83756a", fg = "#000000" })
 
 vim.diagnostic.config {
     severity_sort = true,

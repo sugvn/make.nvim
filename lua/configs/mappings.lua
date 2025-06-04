@@ -17,4 +17,11 @@ end, { desc = "Toggle number" })
 
 map('n','gll',vim.diagnostic.open_float)
 
-vim.keymap.set('n','<A-.>',"<CMD>Oil<CR>",{})
+map('n','<A-.>',"<CMD>Oil<CR>",{})
+
+map('n', '<C-h>', '<C-w>h')
+map('n', '<C-j>', '<C-w>j')
+map('n', '<C-k>', '<C-w>k')
+map('n', '<C-l>', '<C-w>l')
+
+map('n','<leader>i',"<CMD>Inspect<CR>")

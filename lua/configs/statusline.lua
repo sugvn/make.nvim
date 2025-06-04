@@ -42,7 +42,7 @@ vim.api.nvim_create_autocmd("User", {
 local function statusline()
   return table.concat({
   ---  " [%{mode()}]   ",
-    " %f",                       -- File path
+    " %F",                       -- File path
     "%M",                      -- Modified flag
     " ", gitstatus,      -- Git diff from gitsigns
     "%=",                      -- Right align
