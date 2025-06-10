@@ -17,7 +17,7 @@ end, { desc = "Toggle number" })
 
 map('n','gll',vim.diagnostic.open_float)
 
-map('n','<A-.>',"<CMD>Oil<CR>",{})
+-- map('n','<A-.>',"<CMD>Oil<CR>",{})
 
 map('n', '<C-h>', '<C-w>h')
 map('n', '<C-j>', '<C-w>j')
