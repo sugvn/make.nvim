@@ -1,4 +1,3 @@
--- plugins/my_statusline/statusline.lua
 local filetype=""
 local gitstatus=""
 local currbranch=""
@@ -41,13 +40,11 @@ vim.api.nvim_create_autocmd("User", {
 })
 local function statusline()
   return table.concat({
-  ---  " [%{mode()}]   ",
-    " %F",                       -- File path
+    " %f",                       -- File path
     "%M",                      -- Modified flag
     " ", gitstatus,      -- Git diff from gitsigns
     "%=",                      -- Right align
-    "%y",
-    --filetype or " ",
+    filetype or "",
     "  ",                    -- Filetype
     "%l:%L|%v:%{len(getline('.'))}",
     branch or "",          -- Branch name
@@ -55,6 +52,6 @@ local function statusline()
   })
 end
 
-vim.o.statusline = statusline()--"%!v:lua.Statusline()"
+vim.o.statusline = "%!v:lua.Statusline()"
 
---_G.Statusline = statusline
+_G.Statusline = statusline
