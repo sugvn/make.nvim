@@ -15,7 +15,7 @@ return {
           -- If true, highlights the {sign,fold} column the same as cursorline
           cursorline_gutter = true,
           -- If true, highlights the gutter darker than the bg
-          dark_gutter = true,
+          dark_gutter = false,
           -- if true favor treesitter highlights over semantic highlights
           favor_treesitter_hl = true,
           -- Don't set background of floating windows. Recommended for when using floating
@@ -68,7 +68,14 @@ return {
           -- Override default colors
           colors = {},
           -- Override highlight groups
-          highlights = {},
+          highlights = {
+                
+                ["StatusLine"] = { fg = "#b2b2b2", bg = "#1c1c1c" },
+                ["StatusLineNC"] = { fg = "#666666", bg = "#1c1c1c" },
+                ["LineNr"] = { fg = "#5c5c5c" },
+                ["CursorLine"] = { bg = "#111111" }
+            },
+
         })
         -- Convenience function that simply calls `:colorscheme <theme>` with the theme
         -- specified in your config.

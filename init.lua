@@ -20,6 +20,6 @@ require "configs.statusline"
 
 vim.schedule(function()
   require "configs.mappings"
-  -- require "configs.lsp"
+  require "configs.lsp"
   -- require "configs.direct"
 end)

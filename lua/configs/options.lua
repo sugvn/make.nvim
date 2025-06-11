@@ -36,6 +36,6 @@ vim.opt.signcolumn="yes"
 vim.opt.cmdheight = 1
 vim.opt.smartcase = true
 vim.opt.ignorecase = true
-
+vim.o.cmdheight = 0
 
 
