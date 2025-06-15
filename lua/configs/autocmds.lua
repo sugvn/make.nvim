@@ -25,3 +25,43 @@ autocmd({ "UIEnter", "BufReadPost", "BufNewFile" }, {
     end
   end,
 })
+
+
+-- vim.api.nvim_create_autocmd("VimEnter", {
+--   callback = function()
+--     -- Open an empty buffer
+--     vim.cmd("enew")
+--     vim.bo.bufhidden = "wipe"
+--
+--     -- Disable UI elements for a clean look
+--     vim.wo.number = false
+--     vim.wo.relativenumber = false
+--     vim.wo.cursorline = false
+--     vim.wo.signcolumn = "no"
+--     vim.wo.statusline = ""
+--     vim.opt_local.list = false
+--
+--     -- Disable modified flag
+--     vim.bo.modified = false
+--     vim.bo.readonly = true
+--     vim.bo.buftype = "nofile"
+--
+--     -- Set your dashboard content
+--     local lines = {
+--       "  ███╗   ██╗███████╗██╗   ██╗ █████╗ ██╗███╗   ███╗",
+--       "  ████╗  ██║██╔════╝██║   ██║██╔══██╗██║████╗ ████║",
+--       "  ██╔██╗ ██║█████╗  ██║   ██║███████║██║██╔████╔██║",
+--       "  ██║╚██╗██║██╔══╝  ╚██╗ ██╔╝██╔══██║██║██║╚██╔╝██║",
+--       "  ██║ ╚████║███████╗ ╚████╔╝ ██║  ██║██║██║ ╚═╝ ██║",
+--       "  ╚═╝  ╚═══╝╚══════╝  ╚═══╝  ╚═╝  ╚═╝╚═╝╚═╝     ╚═╝",
+--       "",
+--       "  [n] New File    [f] Find File    [q] Quit",
+--     }
+--     vim.api.nvim_buf_set_lines(0, 0, -1, false, lines)
+--
+--     -- Setup key mappings
+--     vim.keymap.set("n", "n", ":enew<CR>", { buffer = true, silent = true })
+--     vim.keymap.set("n", "f", ":Telescope find_files<CR>", { buffer = true, silent = true }) -- You can remove this if no Telescope
+--     vim.keymap.set("n", "q", ":qa<CR>", { buffer = true, silent = true })
+--   end,
+-- })

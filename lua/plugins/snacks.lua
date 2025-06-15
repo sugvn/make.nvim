@@ -13,7 +13,7 @@ return {
     --  timeout = 3000,
     --},
     picker = { enabled = true,
-           layout={ preset="vscode", }
+           layout={ preset="select", }
         },
     --quickfile = { enabled = true },
     --scope = { enabled = true },
@@ -28,8 +28,9 @@ return {
   },
   keys = {
     -- Top Pickers & Explorer
-    { "<A-p>", function() Snacks.picker.smart({cwd="~/"}) end, desc = "Smart Find Files" },
-    { "<leader><leader>", function() Snacks.picker.files({layout={preset="select"}}) end, desc = "Find Config File" },
+    {"<leader>y",function() Snacks.picker.zoxide({cwd="~/"}) end,desc="zoxide search"},
+    -- { "<A-p>", function() Snacks.picker.smart({cwd="~/"}) end, desc = "Smart Find Files" },
+    { "<leader><leader>", function() Snacks.picker.smart({layout={preset="select"}}) end, desc = "Find Config File" },
     { "<leader>,", function() Snacks.picker.buffers() end, desc = "Buffers" },
     { "<leader>/", function() Snacks.picker.grep() end, desc = "Grep" },
     { "<leader>:", function() Snacks.picker.command_history() end, desc = "Command History" },

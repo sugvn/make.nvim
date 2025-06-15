@@ -1,6 +1,5 @@
 return {
   defaults = { lazy = true },
----  install = { colorscheme = { "sorbet" } },
 
   ui = {
     icons = {

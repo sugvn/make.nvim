@@ -1,5 +1,5 @@
 
--- vim.g.snacks_animate = false
+vim.g.snacks_animate = false
 
 --indent--
 vim.opt.expandtab=true
@@ -36,6 +36,6 @@ vim.opt.signcolumn="yes"
 vim.opt.cmdheight = 1
 vim.opt.smartcase = true
 vim.opt.ignorecase = true
-vim.o.cmdheight = 0
+vim.o.cmdheight = 1
 
 

@@ -46,7 +46,8 @@ local function statusline()
     "%=",                      -- Right align
     filetype or "",
     "  ",                    -- Filetype
-    "%l:%L|%v:%{len(getline('.'))}",
+    "ln:%l",
+    -- "%l:%L|%v:%{len(getline('.'))}",
     branch or "",          -- Branch name
     "  ",
   })

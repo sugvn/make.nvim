@@ -1,4 +1,3 @@
-
 --- lsps ---
 local lsp_configs = {}
 for _, f in pairs(vim.api.nvim_get_runtime_file('lsp/*.lua', true)) do
@@ -6,9 +5,6 @@ for _, f in pairs(vim.api.nvim_get_runtime_file('lsp/*.lua', true)) do
   table.insert(lsp_configs, server_name)
 end
 vim.lsp.enable(lsp_configs)
-
-
-vim.api.nvim_set_hl(0, "BlinkCmpMenuSelection", { bg ="#83756a", fg = "#000000" })
 
 vim.diagnostic.config {
     severity_sort = true,
